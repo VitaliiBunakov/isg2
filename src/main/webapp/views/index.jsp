@@ -1,3 +1,4 @@
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <%--
   Created by IntelliJ IDEA.
   User: Vitalii
@@ -11,6 +12,12 @@
     <title>Title</title>
 </head>
 <body>
-hello project
+
+
+<c:forEach items="${AllAuthors}" var="u">
+    <p>${u.name}--${u.id}--${u.posted} </p>
+
+</c:forEach>
+
 </body>
 </html>
